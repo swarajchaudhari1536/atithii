@@ -6,9 +6,7 @@ const nextConfig = {
       { protocol: "https", hostname: "upload.wikimedia.org" },
       { protocol: "https", hostname: "res.cloudinary.com" },
     ],
-    unoptimized: true,
   },
-  transpilePackages: ["mongoose", "bcryptjs", "cloudinary"],
 };
 
 module.exports = nextConfig;
