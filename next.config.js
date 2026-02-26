@@ -8,6 +8,7 @@ const nextConfig = {
     ],
     unoptimized: true,
   },
+  transpilePackages: ["mongoose", "bcryptjs", "cloudinary"],
 };
 
 module.exports = nextConfig;
