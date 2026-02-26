@@ -1,4 +1,7 @@
 import mongoose, { Schema, models, model } from "mongoose";
+import "./User";
+import "./Hotel";
+import "./Room";
 
 export interface IBooking {
   _id?: string;

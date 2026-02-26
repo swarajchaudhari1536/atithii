@@ -1,4 +1,5 @@
 import mongoose, { Schema, models, model } from "mongoose";
+import "./Hotel";
 
 export interface IRoom {
   _id?: string;

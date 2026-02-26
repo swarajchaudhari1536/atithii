@@ -1,4 +1,6 @@
 import mongoose, { Schema, models, model } from "mongoose";
+import "./User";
+import "./Hotel";
 
 export interface IReview {
   _id?: string;

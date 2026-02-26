@@ -36,8 +36,8 @@ export default function Footer() {
               India's premier hotel management platform, built on the timeless wisdom of <em className="text-gold-500 not-italic">Atithi Devo Bhava</em> — The Guest is God.
             </p>
             <div className="text-xs text-stone-600">
-              <p>Developed by <span className="text-gold-400 font-semibold">Chinmay Khopade</span></p>
-              <p className="mt-0.5">📞 +91 93732 35696</p>
+              <p>Developed by <span className="text-gold-400 font-semibold">Swaraj chaudhari</span></p>
+              <p className="mt-0.5">📞 +91 7039219698</p>
             </div>
           </div>
 
@@ -112,7 +112,7 @@ export default function Footer() {
         <div className="border-t border-white/5 mt-14 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-stone-600">
             © {new Date().getFullYear()} Atithi. All rights reserved. Designed & developed by{" "}
-            <span className="text-gold-500 font-semibold">Chinmay Khopade</span>.
+            <span className="text-gold-500 font-semibold">Swaraj Chaudhari</span>.
           </p>
           <div className="flex items-center gap-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-saffron-500" />
