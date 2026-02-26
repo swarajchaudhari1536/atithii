@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import connectDB from "@/lib/mongodb";
 import User from "@/models/User";
-import { authorizeRole } from "@/middleware/authMiddleware";
+import { authorizeRole } from "@/lib/auth";
 
 export async function GET(request: Request) {
   const { user, error } = await authorizeRole(request, ["admin"]);

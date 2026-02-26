@@ -3,7 +3,7 @@ import connectDB from "@/lib/mongodb";
 import User from "@/models/User";
 import Hotel from "@/models/Hotel";
 import Booking from "@/models/Booking";
-import { authorizeRole } from "@/middleware/authMiddleware";
+import { authorizeRole } from "@/lib/auth";
 
 export async function GET(request: Request) {
   const { user, error } = await authorizeRole(request, ["admin"]);
