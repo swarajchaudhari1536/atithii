@@ -5,8 +5,10 @@ import Room from "@/models/Room";
 import { getTokenFromRequest } from "@/lib/auth";
 
 export async function GET(request: Request) {
+  console.log("GET /api/bookings - Request received");
   try {
     const payload = await getTokenFromRequest(request);
+    console.log("GET /api/bookings - Payload:", payload ? "found" : "not found");
     if (!payload) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
     await connectDB();
@@ -35,8 +37,10 @@ export async function GET(request: Request) {
       .populate("userId", "name email phone")
       .sort({ createdAt: -1 });
 
+    console.log(`GET /api/bookings - Returning ${bookings.length} bookings`);
     return NextResponse.json({ bookings });
   } catch (error: any) {
+    console.error("GET /api/bookings - Error:", error.message);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }

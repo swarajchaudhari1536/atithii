@@ -94,8 +94,8 @@ For testing and demonstration, use these pre-configured accounts:
 
 ## 📞 6. Support & Contact
 **Atithi** is designed and developed with precision by:
-**Chinmay Khopade**
-Phone: **+91 93732 35696**
+**Swaraj Chaudhari**
+Phone: **+91 70392 19698**
 Email: `support@atithi.in`
 Website: `https://atithi.vercel.app` (Example)
 

@@ -9,7 +9,7 @@ import LoadingProvider from "@/context/LoadingProvider";
 export const metadata: Metadata = {
   title: "Atithi — India's Luxury Hotel Management Platform",
   description:
-    "Atithi (अतिथि) — Discover and book India's finest hotels. From heritage palaces to beachside retreats. Built by Chinmay Khopade.",
+    "Atithi (अतिथि) — Discover and book India's finest hotels. From heritage palaces to beachside retreats. Built by Swaraj Chaudhari.",
   keywords:
     "Atithi, luxury hotels India, hotel booking, Jaipur palace, Kerala resort, Goa beach hotel, heritage stays, smart hotel management",
   openGraph: {

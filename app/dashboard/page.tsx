@@ -13,9 +13,15 @@ export default function CustomerDashboard() {
   const router = useRouter();
   const [bookings, setBookings] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  console.log("Dashboard State:", { authLoading, user: !!user, loading });
 
   useEffect(() => {
-    if (!authLoading && user) {
+    if (!authLoading) {
+      if (!user) {
+        setLoading(false);
+        router.push("/login?redirect=/dashboard");
+        return;
+      }
       if (user.role === "admin") {
         router.push("/admin");
         return;
@@ -26,7 +32,7 @@ export default function CustomerDashboard() {
       }
       fetchBookings();
     }
-  }, [user, authLoading]);
+  }, [user, authLoading, router]);
 
   const fetchBookings = async () => {
     try {
@@ -143,13 +149,12 @@ export default function CustomerDashboard() {
                       </td>
                       <td className="py-3">
                         <span
-                          className={`px-2.5 py-1 rounded-full text-xs font-medium ${
-                            booking.paymentStatus === "paid"
-                              ? "bg-green-100 text-green-700"
-                              : booking.paymentStatus === "failed"
+                          className={`px-2.5 py-1 rounded-full text-xs font-medium ${booking.paymentStatus === "paid"
+                            ? "bg-green-100 text-green-700"
+                            : booking.paymentStatus === "failed"
                               ? "bg-red-100 text-red-700"
                               : "bg-yellow-100 text-yellow-700"
-                          }`}
+                            }`}
                         >
                           {booking.paymentStatus}
                         </span>

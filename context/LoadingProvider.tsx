@@ -21,11 +21,9 @@ export default function LoadingProvider({ children }: { children: React.ReactNod
     const pathname = usePathname();
 
     useEffect(() => {
-        // Automatically trigger on homepage
-        if (pathname === "/") {
-            setLoading(true);
-        }
-    }, [pathname]);
+        // Only trigger on initial app mount if needed, or remove to prevent forced delays
+        // setLoading(true); 
+    }, []);
 
     const startLoading = () => setLoading(true);
 

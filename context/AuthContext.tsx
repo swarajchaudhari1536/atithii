@@ -47,10 +47,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setUser(data.user);
       } else {
         localStorage.removeItem("token");
+        document.cookie = "token=; path=/; max-age=0";
         setToken(null);
       }
     } catch {
       localStorage.removeItem("token");
+      document.cookie = "token=; path=/; max-age=0";
       setToken(null);
     } finally {
       setLoading(false);

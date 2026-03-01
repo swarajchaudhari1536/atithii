@@ -242,9 +242,9 @@ export default function OwnerDashboard() {
         <div className="text-center mt-12 py-6 border-t border-stone-100">
           <p className="text-xs text-stone-400">
             Atithi — Smart Hotel Management System &nbsp;·&nbsp; Designed & developed by{" "}
-            <span className="text-gold-600 font-semibold">Chinmay Khopade</span>
+            <span className="text-gold-600 font-semibold">Swaraj Chaudhari</span>
             <span className="text-stone-300 mx-2">·</span>
-            <a href="tel:+919373235696" className="text-gold-500 hover:underline">+91 93732 35696</a>
+            <a href="tel:+919373235696" className="text-gold-500 hover:underline">+91 70392 19698</a>
           </p>
         </div>
       </div>
